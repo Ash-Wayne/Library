@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <title>Library</title>
-</head>
-<body>
-    <dialog>
-        <form action="">
-            <div><label for="title">Title  <input type="text" id="title" name="title"></label></div>
-            <div><label for="author">Author  <input type="text" id="author" name="author"></label></div>
-            <div><label for="pages">Pages  <input type="number" id="pages" name="pages"></label></div>
-            <div><label for="read-status">Completed?  <input type="checkbox" id="read-status" name="read-status"></label></div>
-            <div><button type="submit" formmethod="dialog" class="add">Add</button><button type="button" class="close">Close</button></div>
-        </form>
-    </dialog>
-    <button>ADD NEW</button>
-    <div class="flex"></div>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="reset.css" />
+		<link rel="stylesheet" href="styles.css" />
+		<script src="script.js" defer></script>
+		<title>Library</title>
+	</head>
+	<body>
+		<dialog>
+			<form action="" id="form">
+				<div>
+					<label for="title">Title <input type="text" id="title" name="title" required /></label>
+				</div>
+				<div>
+					<label for="author">Author <input type="text" id="author" name="author" required /></label>
+				</div>
+				<div>
+					<label for="pages">Pages <input type="number" id="pages" name="pages" required /></label>
+				</div>
+				<div>
+					<label for="read-status"
+						>Completed? <input type="checkbox" id="read-status" name="read-status"
+					/></label>
+				</div>
+				<div>
+					<button type="submit" formmethod="dialog" class="add">Add</button
+					><button type="button" class="close">Close</button>
+				</div>
+			</form>
+		</dialog>
+		<button>ADD NEW</button>
+		<div class="flex"></div>
+	</body>
 </html>
